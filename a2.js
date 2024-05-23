@@ -1,3 +1,14 @@
+/*********************************************************************************
+*  WEB700 – Assignment 2
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: Aakash Harendrakumar Patel Student ID: 147805238 Date: 23 May 2024
+*
+********************************************************************************/ 
+
+
 //declaring constant variable collegedata which will store the path for collegedata.js which we will use to call functions
 const collegedata = require('./modules/collegedata.js');
 
