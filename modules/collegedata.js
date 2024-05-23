@@ -81,4 +81,5 @@ function getCourses() {
     });
 }
 
+//mentioning this so that we can export the functions from this file.
 module.exports = { initialize, getAllStudents, getTAs, getCourses };
