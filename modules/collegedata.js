@@ -8,7 +8,6 @@ class Data
 
 var dataCollection = null;
 const fs = require('fs');
-const path = require('path');
 
 function initialize() {
     return new Promise((resolve, reject) => {
