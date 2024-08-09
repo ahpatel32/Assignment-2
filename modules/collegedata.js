@@ -13,10 +13,10 @@ const path = require('path');
 function initialize() {
     return new Promise((resolve, reject) => {
         //defining a constant variable with the datafolder path values.
-        const datafolderpath = 'D:/BTT - 2024/Sem 2/WEB700/Assignment-2';
+        const datafolderpath = path.join(__dirname, '../data');
 
         //reading the courses.json file
-        fs.readFile(path.join(datafolderpath, 'data', 'courses.json'), 'utf8', (err, courseData) => {
+        fs.readFile(path.join(datafolderpath, 'courses.json'), 'utf8', (err, courseData) => {
             if (err) {
                 //returning the reject message if we are not able to read the data from courses.json
                 return reject("unable to read courses.json");
@@ -25,7 +25,7 @@ function initialize() {
             courses = JSON.parse(courseData);
 
         //reading the students.json file
-        fs.readFile(path.join(datafolderpath, 'data', 'students.json'), 'utf8', (err, studentData) => {
+        fs.readFile(path.join(datafolderpath, 'students.json'), 'utf8', (err, studentData) => {
             if (err) {
                 //returning the reject message if we are not able to read the data from students.json
                 return reject("Unable to read students.json");
